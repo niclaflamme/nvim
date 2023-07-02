@@ -27,6 +27,8 @@ M.general = {
 
     ["n"] = { "nzzzv", "Next Found -> Centered" },
     ["N"] = { "NzzzV", "Previous Found -> Centered" },
+
+    [",t"] = { "gd", "Go to definition" },
   },
 
   v = {
