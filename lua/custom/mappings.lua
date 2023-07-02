@@ -25,14 +25,14 @@ M.general = {
     [",f"] = { "<cmd> Telescope find_files <CR>", "Find files" },
     [",<space>"] = { "/", "Find in file" },
 
-    [",t"] = { "gd", "Go to definition" },
-
     ["n"] = { "nzzzv", "Next Found -> Centered" },
     ["N"] = { "NzzzV", "Previous Found -> Centered" },
   },
 
   v = {
     [",s"] = { ":sort<Return>", "Sort highlighted" },
+
+    [",t"] = { "gd", "Go to definition" },
   }
 }
 
