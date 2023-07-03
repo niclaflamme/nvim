@@ -5,6 +5,7 @@ local M = {}
 M.disabled = {
   n = {
       [","] = "",
+      [",a"] = "",
       ["<leader>n"] = "",
       ["q"] = "",
       ["Q"] = "",
@@ -23,7 +24,8 @@ M.general = {
 
     [",n"] = {"<cmd> NvimTreeToggle <CR>", "Toggle nvimtree"},
     [",f"] = { "<cmd> Telescope find_files <CR>", "Find files" },
-    [",<space>"] = { "/", "Find in file" },
+    [",a"] = { "<cmd> Telescope live_grep <CR>", "Find in files" },
+    [",<space>"] = { "/", "Find in that file" },
 
     ["n"] = { "nzzzv", "Next Found -> Centered" },
     ["N"] = { "NzzzV", "Previous Found -> Centered" },
