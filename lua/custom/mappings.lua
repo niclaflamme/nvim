@@ -34,7 +34,7 @@ M.general = {
   },
 
   v = {
-    [",s"] = { ":sort<Return>", "Sort highlighted" },
+    [",,"] = { ":sort<Return>", "Sort highlighted" },
 
     [",t"] = { "gd", "Go to definition" },
   }
