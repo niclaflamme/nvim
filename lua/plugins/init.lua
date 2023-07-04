@@ -16,6 +16,15 @@ local default_plugins = {
   },
 
   {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup({})
+    end,
+  },
+
+  {
     "NvChad/ui",
     branch = "v2.0",
     lazy = false,
