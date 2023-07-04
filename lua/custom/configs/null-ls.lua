@@ -10,13 +10,33 @@ local sources = {
 
   -- webdev stuff
   b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
-  b.formatting.prettier.with { filetypes = { "html", "markdown", "css", "json" } }, -- so prettier works only on these filetypes
+  b.formatting.prettier.with { filetypes = { "html", "markdown", "css", "json" } }, -- so prettier works only on these filetypes,
+  b.formatting.rustywind, -- Tailwind
 
-  -- Elixir
-  b.formatting.diagnostics.credo,
+  -- Elixir // Erlang
+  b.formatting.erlfmt,
+
+  -- PostgreSQL // Prisma
+  b.formatting.pg_format,
+  b.formatting.prismaFmt,
+
+  -- Swift
+  b.formatting.swiftformat,
+
+  -- Python
+  b.formatting.black,
+
+  -- Haskell
+  b.formatting.brittany,
+
+  -- Clojure
+  b.formatting.cljstyle,
+
+  -- Elm
+  b.formatting.elm_format,
 
   -- Rust
-  b.formatting.diagnostics.code_actions.ltrs,
+  b.formatting.rustfmt,
 
   -- Lua
   b.formatting.stylua,
