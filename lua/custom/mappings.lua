@@ -27,6 +27,13 @@ M.general = {
     [",a"] = { "<cmd> Telescope live_grep <CR>", "Find in files" },
     [",<space>"] = { "/", "Find in that file" },
 
+    [",p"] = {
+      function()
+        vim.lsp.buf.format { async = true }
+      end,
+      "LSP formatting",
+    },
+
     ["n"] = { "nzzzv", "Next Found -> Centered" },
     ["N"] = { "NzzzV", "Previous Found -> Centered" },
 
