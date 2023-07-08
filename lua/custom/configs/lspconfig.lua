@@ -13,5 +13,19 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+
+lspconfig.rust_analyzer.setup {
+  ettings = {
+    ["rust-analyzer"] = {
+      workspace = {
+        symbol = {
+          search = {
+            kind = "all_symbols"
+          }
+        }
+      }
+    },
+  }
+}
 -- 
 -- lspconfig.pyright.setup { blabla}
