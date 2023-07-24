@@ -44,6 +44,8 @@ M.general = {
     [",,"] = { ":sort<Return>", "Sort highlighted" },
 
     [",t"] = { "gd", "Go to definition" },
+
+    [",y"] = { "\"+y<Return>", "Copy to clipboard" },
   }
 }
 
