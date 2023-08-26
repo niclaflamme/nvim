@@ -4,25 +4,25 @@ local M = {}
 -- In order to disable a default keymap, use
 M.disabled = {
   n = {
-      [","] = "",
-      [",a"] = "",
-      ["<leader>n"] = "",
-      ["q"] = "",
-      ["Q"] = "",
-  }
+    [","] = "",
+    [",a"] = "",
+    ["<leader>n"] = "",
+    ["q"] = "",
+    ["Q"] = "",
+  },
 }
 
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
 
-    [",w"] = {":w <CR>", "Write File"},
-    [",q"] = {":q! <CR>", "Close Buffer"},
+    [",w"] = { ":w <CR>", "Write File" },
+    [",q"] = { ":q! <CR>", "Close Buffer" },
 
-    [",,"] = {"<C-W>w", "Cycle Tabs"},
-    [",s"] = {":vs <CR>", "Vertical Split"},
+    [",,"] = { "<C-W>w", "Cycle Tabs" },
+    [",s"] = { ":vs <CR>", "Vertical Split" },
 
-    [",n"] = {"<cmd> NvimTreeToggle <CR>", "Toggle nvimtree"},
+    [",n"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
     [",f"] = { "<cmd> Telescope find_files <CR>", "Find files" },
     [",a"] = { "<cmd> Telescope live_grep <CR>", "Find in files" },
     [",<space>"] = { "/", "Find in that file" },
@@ -45,8 +45,8 @@ M.general = {
 
     [",t"] = { "gd", "Go to definition" },
 
-    [",y"] = { "\"+y<Return>", "Copy to clipboard" },
-  }
+    [",y"] = { '"+y<Return>', "Copy to clipboard" },
+  },
 }
 
 -- more keybinds!
