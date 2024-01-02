@@ -17,7 +17,8 @@ M.general = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
 
     [",w"] = { ":wa <CR>", "Write File" },
-    [",q"] = { ":wqa! <CR>", "Close Buffer" },
+    [",q"] = { ":wq! <CR>", "Close Buffer" },
+    [",d"] = { ":wqa! <CR>", "Close Buffer" },
 
     [",,"] = { "<C-W>w", "Cycle Tabs" },
     [",s"] = { ":vs <CR>", "Vertical Split" },
