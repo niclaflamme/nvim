@@ -20,12 +20,12 @@ M.general = {
     [",q"] = { ":q <CR>", "Close Buffer" },
     [",x"] = { ":qa! <CR>", "Quit everything" },
 
-    [",,"] = { ":w <CR> <C-W>w", "Cycle Tabs" },
-    [",s"] = { ":w <CR> :vs <CR>", "Vertical Split" },
+    [",,"] = { "<C-W>w", "Cycle Tabs" },
+    [",s"] = { ":vs <CR>", "Vertical Split" },
 
-    [",n"] = { ":w <CR> <cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
-    [",f"] = { ":w <CR> <cmd> Telescope find_files <CR>", "Find files" },
-    [",a"] = { ":w <CR> <cmd> Telescope live_grep <CR>", "Find in files" },
+    [",n"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
+    [",f"] = { "<cmd> Telescope find_files <CR>", "Find files" },
+    [",a"] = { "<cmd> Telescope live_grep <CR>", "Find in files" },
     [",<space>"] = { "/", "Find in that file" },
 
     [",p"] = {
