@@ -16,16 +16,16 @@ M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
 
-    [",w"] = { ":wa <CR>", "Write File" },
-    [",q"] = { ":wq! <CR>", "Close Buffer" },
-    [",d"] = { ":wqa! <CR>", "Close Buffer" },
+    [",w"] = { ":w <CR>", "Write File" },
+    [",q"] = { ":q <CR>", "Close Buffer" },
+    [",x"] = { ":qa! <CR>", "Quit everything" },
 
-    [",,"] = { "<C-W>w", "Cycle Tabs" },
-    [",s"] = { ":vs <CR>", "Vertical Split" },
+    [",,"] = { ":w <CR> <C-W>w", "Cycle Tabs" },
+    [",s"] = { ":w <CR> :vs <CR>", "Vertical Split" },
 
-    [",n"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
-    [",f"] = { "<cmd> Telescope find_files <CR>", "Find files" },
-    [",a"] = { "<cmd> Telescope live_grep <CR>", "Find in files" },
+    [",n"] = { ":w <CR> <cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
+    [",f"] = { ":w <CR> <cmd> Telescope find_files <CR>", "Find files" },
+    [",a"] = { ":w <CR> <cmd> Telescope live_grep <CR>", "Find in files" },
     [",<space>"] = { "/", "Find in that file" },
 
     [",p"] = {
